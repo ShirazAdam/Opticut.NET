@@ -1,0 +1,124 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36202.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opticut.Web", "Opticut.Web\Opticut.Web.csproj", "{FD94D55B-1AB8-F8CF-E399-D250424B0C24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opticut.NET.AppHost", "Opticut.NET.AppHost\Opticut.NET.AppHost.csproj", "{C9C7F35B-C32D-4F4A-B25E-9FC819A05C86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opticut.ServiceDefaults", "Opticut.ServiceDefaults\Opticut.ServiceDefaults.csproj", "{C8BC50C1-EF81-57AB-B647-E0223CE9485D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opticut.Contracts", "Opticut.Contracts\Opticut.Contracts.csproj", "{37D52677-F6E5-4FC8-95C7-C16E0EAEBDE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opticut.Services", "Opticut.Services\Opticut.Services.csproj", "{9E75A9B4-B5D5-4C23-9EC7-79AC8356FEBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opticut.Types", "Opticut.Types\Opticut.Types.csproj", "{67DA465E-3FEB-4640-BA87-CB255A48CE3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opticut.Platform", "Opticut.Platform\Opticut.Platform.csproj", "{73A494C2-4E9A-4FB1-BB85-897ADFD31F47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opticut.Infrastructure", "Opticut.Infrastructure\Opticut.Infrastructure.csproj", "{C7125587-101A-4802-AB08-B0C9FD579959}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opticut.Tests", "Opticut.Tests\Opticut.Tests.csproj", "{8D14EACD-C108-47F0-83CF-7F8E114D673B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opticut.Data", "Opticut.Data\Opticut.Data.csproj", "{4120D464-162C-4159-8268-E7D1C2CD8D20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opticut.Services.GrpcHost", "Opticut.Services.GrpcHost\Opticut.Services.GrpcHost.csproj", "{C1130F07-783B-7A72-8736-BAE2C89A8F72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD94D55B-1AB8-F8CF-E399-D250424B0C24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD94D55B-1AB8-F8CF-E399-D250424B0C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD94D55B-1AB8-F8CF-E399-D250424B0C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD94D55B-1AB8-F8CF-E399-D250424B0C24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9C7F35B-C32D-4F4A-B25E-9FC819A05C86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9C7F35B-C32D-4F4A-B25E-9FC819A05C86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9C7F35B-C32D-4F4A-B25E-9FC819A05C86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9C7F35B-C32D-4F4A-B25E-9FC819A05C86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8BC50C1-EF81-57AB-B647-E0223CE9485D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8BC50C1-EF81-57AB-B647-E0223CE9485D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8BC50C1-EF81-57AB-B647-E0223CE9485D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8BC50C1-EF81-57AB-B647-E0223CE9485D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37D52677-F6E5-4FC8-95C7-C16E0EAEBDE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37D52677-F6E5-4FC8-95C7-C16E0EAEBDE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37D52677-F6E5-4FC8-95C7-C16E0EAEBDE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37D52677-F6E5-4FC8-95C7-C16E0EAEBDE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E75A9B4-B5D5-4C23-9EC7-79AC8356FEBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E75A9B4-B5D5-4C23-9EC7-79AC8356FEBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E75A9B4-B5D5-4C23-9EC7-79AC8356FEBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E75A9B4-B5D5-4C23-9EC7-79AC8356FEBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67DA465E-3FEB-4640-BA87-CB255A48CE3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67DA465E-3FEB-4640-BA87-CB255A48CE3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67DA465E-3FEB-4640-BA87-CB255A48CE3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67DA465E-3FEB-4640-BA87-CB255A48CE3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73A494C2-4E9A-4FB1-BB85-897ADFD31F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73A494C2-4E9A-4FB1-BB85-897ADFD31F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73A494C2-4E9A-4FB1-BB85-897ADFD31F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73A494C2-4E9A-4FB1-BB85-897ADFD31F47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7125587-101A-4802-AB08-B0C9FD579959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7125587-101A-4802-AB08-B0C9FD579959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7125587-101A-4802-AB08-B0C9FD579959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7125587-101A-4802-AB08-B0C9FD579959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D14EACD-C108-47F0-83CF-7F8E114D673B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D14EACD-C108-47F0-83CF-7F8E114D673B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D14EACD-C108-47F0-83CF-7F8E114D673B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D14EACD-C108-47F0-83CF-7F8E114D673B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4120D464-162C-4159-8268-E7D1C2CD8D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4120D464-162C-4159-8268-E7D1C2CD8D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4120D464-162C-4159-8268-E7D1C2CD8D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4120D464-162C-4159-8268-E7D1C2CD8D20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1130F07-783B-7A72-8736-BAE2C89A8F72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1130F07-783B-7A72-8736-BAE2C89A8F72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1130F07-783B-7A72-8736-BAE2C89A8F72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1130F07-783B-7A72-8736-BAE2C89A8F72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A69B3FC-509B-4EF6-93FA-B724DFDDC84C}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/shiraz0
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Opticut.Web\\Opticut.Web.csproj
+		SccProjectName1 = Opticut.Web
+		SccLocalPath1 = Opticut.Web
+		SccProjectUniqueName2 = Opticut.Services\\Opticut.Services.csproj
+		SccProjectName2 = Opticut.Services
+		SccLocalPath2 = Opticut.Services
+		SccProjectUniqueName3 = Opticut.Platform\\Opticut.Platform.csproj
+		SccProjectName3 = Opticut.Platform
+		SccLocalPath3 = Opticut.Platform
+		SccProjectUniqueName4 = Opticut.Types\\Opticut.Types.csproj
+		SccProjectName4 = Opticut.Types
+		SccLocalPath4 = Opticut.Types
+		SccProjectUniqueName5 = Opticut.Data\\Opticut.Data.csproj
+		SccProjectName5 = Opticut.Data
+		SccLocalPath5 = Opticut.Data
+		SccProjectUniqueName6 = Opticut.Tests\\Opticut.Tests.csproj
+		SccProjectName6 = Opticut.Tests
+		SccLocalPath6 = Opticut.Tests
+		SccProjectUniqueName7 = Opticut.Infrastructure\\Opticut.Infrastructure.csproj
+		SccProjectName7 = Opticut.Infrastructure
+		SccLocalPath7 = Opticut.Infrastructure
+		SccProjectUniqueName8 = Opticut.Services.GrpcHost\\Opticut.Services.GrpcHost.csproj
+		SccProjectName8 = Opticut.Services.GrpcHost
+		SccLocalPath8 = Opticut.Services.GrpcHost
+		SccProjectUniqueName9 = Opticut.ServiceDefaults\\Opticut.ServiceDefaults.csproj
+		SccProjectName9 = Opticut.ServiceDefaults
+		SccLocalPath9 = Opticut.ServiceDefaults
+		SccProjectUniqueName10 = Opticut.Contracts\\Opticut.Contracts.csproj
+		SccProjectName10 = Opticut.Contracts
+		SccLocalPath10 = Opticut.Contracts
+		SccProjectUniqueName11 = Opticut.Web.AppHost\\Opticut.NET.AppHost.csproj
+		SccProjectName11 = Opticut.Web.AppHost
+		SccLocalPath11 = Opticut.Web.AppHost
+	EndGlobalSection
+EndGlobal

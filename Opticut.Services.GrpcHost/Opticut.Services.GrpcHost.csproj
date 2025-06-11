@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\user.proto" GrpcServices="Server" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.71.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Opticut.Contracts\Opticut.Contracts.csproj" />
+    <ProjectReference Include="..\Opticut.Data\Opticut.Data.csproj" />
+    <ProjectReference Include="..\Opticut.ServiceDefaults\Opticut.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\Opticut.Services\Opticut.Services.csproj" />
+    <ProjectReference Include="..\Opticut.Types\Opticut.Types.csproj" />
+  </ItemGroup>
+
+</Project>

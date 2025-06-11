@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "Opticut.Services.GrpcHost";
+
+package user;
+
+service UserGrpcService {
+  rpc GetAllUsers (GetAllUserRequest) returns (GetAllUserResponse);
+}
+
+message GetAllUserRequest {
+	int32 pagenumber = 1;
+	int32 rowsperpage = 2;
+	int32 totalrows = 3;
+}
+
+message GetAllUserResponse {
+  repeated User user = 1;  // "repeated" indicates a list/collection
+}
+
+message User {
+	int64 id = 1;
+	string firstname = 2;
+	string lastname = 3;
+	google.protobuf.Timestamp dateofbirth = 4;
+	string email = 5;
+	string phonenumber = 6;
+}
