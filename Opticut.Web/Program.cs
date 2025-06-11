@@ -23,6 +23,21 @@ builder.Services.AddAuthorization(options =>
 builder.Services.AddRazorPages()
     .AddMicrosoftIdentityUI();
 
+// var connectionString =
+//     builder.Configuration.GetConnectionString("DefaultConnection")
+//     ?? throw new InvalidOperationException("Connection string: 'DefaultConnection' not found.");
+
+// builder.Services.AddDbContext<OpticutDbContext>(options =>
+//     options.UseSqlServer(connectionString));
+
+//builder.Services.AddScoped<IUserRepository, UserRepository>();
+//builder.Services.AddScoped<IUserService, UserService>();
+
+builder.Services.AddGrpcClient<UserGrpcService.UserGrpcServiceClient>(options =>
+{
+    options.Address = new Uri("https://localhost:7192/");
+});
+
 var app = builder.Build();
 
 app.MapDefaultEndpoints();
@@ -35,21 +50,6 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
-
-var connectionString =
-    builder.Configuration.GetConnectionString("DefaultConnection")
-    ?? throw new InvalidOperationException("Connection string: 'DefaultConnection' not found.");
-
-builder.Services.AddDbContext<OpticutDbContext>(options =>
-    options.UseSqlServer(connectionString));
-
-//builder.Services.AddScoped<IUserRepository, UserRepository>();
-//builder.Services.AddScoped<IUserService, UserService>();
-
-builder.Services.AddGrpcClient<UserGrpcService.UserGrpcServiceClient>(options =>
-{
-    options.Address = new Uri("https://localhost:7192/");
-});
 
 app.UseHttpsRedirection();
 
