@@ -33,7 +33,7 @@ This assembly is in designed in isolation to allow us to easily use a different 
 
 ## Opticut.Services.GrpcHost
 
-This is a wrapper for the Opticut.Services Class Library (assembly) to expose those capabilities as a desired service using a specific technology. The idea is that we can easily switch between the type of host container used whilst maintaining the core logic in an isolated Class Library (assembly).
+This is a wrapper for the **Opticut.Services** Class Library (assembly) to expose those capabilities as a desired service using a specific technology. The idea is that we can easily switch between the type of host container used whilst maintaining the core logic in an isolated Class Library (assembly).
 
 This will start up its own instance on the web server.
 
