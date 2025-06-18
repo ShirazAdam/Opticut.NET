@@ -1,6 +1,8 @@
 # Opticut.NET
 
-The .NET 9 version of the PHP code for Opticut.
+The .NET 9 version of the PHP code for Opticut. 
+
+This project is hosted on Azure DevOps (TFVC) where the main development is done. Codeberg is an old copy of the TFVC repository on Azure DevOps just to for visibility to others without having to assign an Azure DevOps licence to others.
 
 ## Opticut.Contracts
 
@@ -8,7 +10,7 @@ Contains all the interfaces to be used by all the different .NET projects as par
 
 ## Opticut.Data
 
-Contains the Database design as a 'Code First' approach which means DBs can be built using C# code and the DB schema is version controlled through Azure DevOps (TFVC or GIT).
+Contains the Database design as a 'Code First' approach which means DBs can be built using C# code and the DB schema is version controlled through Azure DevOps (TFVC).
 This project also contains the data models along with the repositories that will be used to enable separation of concerns of data from application. 
 
 When changes to the database models have been made, run the command **Add-Migration db-creation** in the Package Manager console of Visual Studio 2022 Enterprise. Once the migration files have been generated, run the command **update-database** to apply changes to the database targeted by the connection string. Multiple connection strings should be set up to isolate dev from production instances.
