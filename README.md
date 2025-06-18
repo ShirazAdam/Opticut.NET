@@ -2,7 +2,7 @@
 
 The .NET 9 version of the PHP code for Opticut. 
 
-This project is hosted on Azure DevOps (TFVC) where the main development is done. Codeberg is an old copy of the TFVC repository on Azure DevOps just to for visibility to others without having to assign an Azure DevOps licence to others.
+This project is hosted on Azure DevOps (TFVC) where the main development is done. Codeberg is an old copy of the TFVC repository on Azure DevOps just for visibility to others without having to assign an Azure DevOps licence to others.
 
 ## Opticut.Contracts
 
